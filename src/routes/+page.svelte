@@ -7,5 +7,6 @@
 </script>
  
 {#each persons as person}
+    <img src="https://fdnd.directus.app/assets/{person.mugshot}" alt={person.name}>
     {person.name} <br>
 {/each}
