@@ -24,6 +24,7 @@
 		width: 160px;
 		height: 195px;
 		border-radius: 5px;
+		border: 1px solid rgb(207, 207, 207);
 
 		@media (min-width:768px){
 			width: 230px;
