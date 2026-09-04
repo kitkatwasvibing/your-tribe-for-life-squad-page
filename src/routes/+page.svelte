@@ -5,6 +5,8 @@
     const persons = data.persons;
 </script>
  
+ <h1 class="h1"> Squad 2</h1>
+
  <div class="person-container">
 {#each persons as person}
 <div class="person">
@@ -17,6 +19,9 @@
 
 
 <style>
+    .h1{
+        text-align:center;
+    }
     .person-container{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
