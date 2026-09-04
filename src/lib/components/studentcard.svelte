@@ -1,11 +1,15 @@
 <script>
 	let { person } = $props();
+
+	const mugshot = person.mugshot
+		? `https://fdnd.directus.app/assets/${person.mugshot}`
+		: '/images/profile-dummy.jpeg';
 </script>
 
 <article class="student-card">
 	<img
 		class="person-mugshot"
-		src={`https://fdnd.directus.app/assets/${person.mugshot}`}
+		src={mugshot}
 		alt={person.name}
 		width="200"
 		height="200"
@@ -29,7 +33,7 @@
 		@media (min-width:768px){
 			width: 230px;
 			height: 230px;
-		}
+		} 
 	}
 
 	.person-name{
