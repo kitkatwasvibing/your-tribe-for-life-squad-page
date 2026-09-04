@@ -1,19 +1,15 @@
-<!-- <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p> -->
-
 <script>
-    let {data} = $props();
-    const persons = data.persons;
+	import Studentcard from '$lib/components/studentcard.svelte';
+
+	let { data } = $props();
+	const persons = data.persons;
 </script>
  
  <h1 class="h1"> Squad 2</h1>
 
  <div class="person-container">
 {#each persons as person}
-<div class="person">
-    <img class= "person-img"  src="https://fdnd.directus.app/assets/{person.mugshot}" alt={person.name}>
-    <p class="person-name">{person.name} </p>
-    <a class="profilecard" href={person.profilecard}>Profilecard</a>
-    </div>
+	<Studentcard {person} />
 {/each}
 </div>
 
@@ -25,22 +21,24 @@
     .person-container{
         display:grid;
         grid-template-columns: repeat(2, 1fr);
-        gap:5px;
+        gap:10px;
         justify-content: center;
+        padding: 0 .5rem;
 
             @media (min-width:550px){
                 grid-template-columns: repeat(3, 1fr);
-                gap:5px;
+                gap:15px;
             }
 
             @media (min-width:768px){
             grid-template-columns: repeat(4, 1fr);
-            gap:5px; 
+            gap:15px; 
+            padding: 0 1rem;
             }
 
         @media (min-width:1024px){
             grid-template-columns: repeat(5,1fr);
-            gap: 5px;
+            gap: 15px;
         }
     }
     .person{
