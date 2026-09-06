@@ -26,18 +26,19 @@
 		background: rgb(238, 238, 238);
 		padding: .7rem;
 		width: 160px;
-		height: 195px;
+		height: 215px;
 		border-radius: 5px;
 		border: 1px solid rgb(207, 207, 207);
 
 		@media (min-width:768px){
 			width: 230px;
-			height: 230px;
+			height: 240px;
 		} 
 	}
 
 	.person-name{
 		text-align: center;
+		font-size: 20px;
 	}
 
 	.profile-link{
