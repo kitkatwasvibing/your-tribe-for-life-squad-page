@@ -32,8 +32,8 @@
 <style>
 	.student-card{
 		background: rgb(238, 238, 238);
-		padding: .7rem;
-		width: 160px;
+		padding: .3rem;
+		width: 170px;
 		min-height: 195px;
 		height: auto;
 		border-radius: 5px;
@@ -42,7 +42,8 @@
 
 		@media (min-width:768px){
 			width: 230px;
-			height: 240px;
+			height: 250px;
+			padding: .3rem 0rem;
 		} 
 	}
 
@@ -62,7 +63,7 @@
 	}
 
 	.person-mugshot{
-		width: 160px;
+		width: 170px;
 		height: 130px;
 		display: block;
 		margin: 0 auto;
