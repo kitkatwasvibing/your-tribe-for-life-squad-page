@@ -26,14 +26,21 @@
 		background: rgb(238, 238, 238);
 		padding: .7rem;
 		width: 160px;
-		height: 215px;
+		min-height: 195px;
+		height: auto;
 		border-radius: 5px;
 		border: 1px solid rgb(207, 207, 207);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
 
 		@media (min-width:768px){
 			width: 230px;
 			height: 240px;
 		} 
+	}
+
+	.student-card:hover {
+		transform: scale(1.03);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 	}
 
 	.person-name{
