@@ -23,7 +23,8 @@
 			src="/images/extern-link-arrow.svg" 
 			alt="Externe link" 
 			width="13px" 
-			height="13px">
+			height="13px"
+		>
 	</a>
 </article>
 
