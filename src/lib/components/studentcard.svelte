@@ -34,7 +34,7 @@
 		background: rgb(238, 238, 238);
 		padding: .3rem;
 		width: 170px;
-		min-height: 195px;
+		min-height: 215px;
 		height: auto;
 		border-radius: 5px;
 		border: 1px solid rgb(207, 207, 207);
@@ -54,7 +54,7 @@
 
 	.person-name{
 		text-align: center;
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	.profile-link{
