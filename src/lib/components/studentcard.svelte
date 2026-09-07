@@ -15,7 +15,7 @@
 		height="200"
 	>
 
-	<p class="person-name">{person.name}</p>
+	<!-- <p class="person-name">{person.name}</p>
 
 	<a class="profile-link" href={person.profilecard}>Profilecard 
 		<img 
@@ -25,26 +25,19 @@
 			width="13px" 
 			height="13px"
 		>
-	</a>
+	</a> -->
 </article>
 
 
 <style>
 	.student-card{
 		background: rgb(238, 238, 238);
-		padding: .3rem;
-		width: 170px;
-		min-height: 215px;
+		padding: .3rem 0rem;
+		width: 150px;
 		height: auto;
 		border-radius: 5px;
 		border: 1px solid rgb(207, 207, 207);
 		transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-		@media (min-width:768px){
-			width: 230px;
-			height: 250px;
-			padding: .3rem 0rem;
-		} 
 	}
 
 	.student-card:hover {
@@ -63,14 +56,9 @@
 	}
 
 	.person-mugshot{
-		width: 170px;
-		height: 130px;
+		width: 140px;
+		height: 120px;
 		display: block;
 		margin: 0 auto;
-
-		@media (min-width:768px){
-			width: 220px;
-			height: 160px;
-		}
 	}
 </style>

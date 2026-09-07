@@ -33,12 +33,13 @@
             @media (min-width:768px){
             grid-template-columns: repeat(4, 1fr);
             gap:15px; 
-            padding: 0 3rem;
+            padding: 0 7rem;
             }
 
         @media (min-width:1024px){
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(6,1fr);
             gap: 15px;
+
         }
     }
     .person{
