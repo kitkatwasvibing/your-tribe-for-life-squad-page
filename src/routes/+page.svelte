@@ -90,10 +90,6 @@
         height: auto;
         display: block;
         margin: 0 auto;
-
-        @media (min-width: 768px) {
-            max-width: 900px;
-        }
     }
 
     .student-info {
