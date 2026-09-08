@@ -95,6 +95,12 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        width: 300px;
+	    margin: 0 auto;
+
+        @media (min-width: 768px) {
+           margin: 0;
+        }
     }
 
     .student-info header {
