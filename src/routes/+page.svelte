@@ -73,34 +73,44 @@
         display: grid;
 	    grid-template-columns: 1fr;
         gap: 2rem;
-        padding: 1rem;
-        max-width: 1000px;
+        padding: 2rem 3rem;
+        max-width: 800px;
         margin: 0 auto;
 
         @media (min-width: 768px) {
             grid-template-columns: 1fr 1fr;
             align-items: start;
+            max-width: 900px;
         }
     }
 
     .mugshot-detail {
-        width: 80%;
+        width: 100%;
         max-width: 400px;
         height: auto;
         display: block;
         margin: 0 auto;
+
+        @media (min-width: 768px) {
+            max-width: 900px;
+        }
     }
 
     .student-info {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        width: 300px;
+        width: 100%;
 	    margin: 0 auto;
 
         @media (min-width: 768px) {
            margin: 0;
+           width: 500px;
         }
+    }
+
+    .student-info h2{
+        margin: 0;
     }
 
     .student-info header {
@@ -114,6 +124,13 @@
         flex-direction: column;
         gap: 0.75rem;
         margin: 0;
+
+        @media (min-width: 768px) {
+           	display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem 4rem;
+            margin: 0;
+        }
     }
 
     .info-item {
