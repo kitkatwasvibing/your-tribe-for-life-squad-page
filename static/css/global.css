@@ -15,3 +15,7 @@ body{
 .ds-container.bottom{
     border-radius: 0px 0px 50px 50px;
 }
+
+.ds-container.top{
+    border-radius: 50px 50px 0px 0px;
+}
