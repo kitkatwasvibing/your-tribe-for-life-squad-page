@@ -1,4 +1,21 @@
+body{
+    height:100%;
+}
+
 .person{
     border: 1px black solid;
     border-radius: 5px;
+}
+
+.ds-container{
+    border:5em darkred solid;
+    background: lightgray;
+}
+
+.ds-container.bottom{
+    border-radius: 0px 0px 50px 50px;
+}
+
+.ds-container.top{
+    border-radius: 50px 50px 0px 0px;
 }
