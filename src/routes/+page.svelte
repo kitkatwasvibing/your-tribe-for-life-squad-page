@@ -22,10 +22,11 @@
     .person-container{
         display:flex;
         flex-wrap: wrap;
+        flex-direction: column;
         gap:10px;
         justify-content: center;
         height: 50vh;
-        overflow-y: scroll;
+        overflow-x: scroll;
 
             @media (min-width:550px){
                 grid-template-columns: repeat(3, 1fr);
