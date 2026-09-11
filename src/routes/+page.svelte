@@ -5,7 +5,7 @@
 	const persons = data.persons;
 </script>
  
-<div class="ds-container">
+<div class="ds-container bottom">
     <h1 class="h1"> Squad 2</h1>
 
     <div class="person-container">
