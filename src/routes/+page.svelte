@@ -11,6 +11,8 @@
 		: '/images/profile-dummy.jpeg';
 
     const age = new Date().getFullYear() - new Date(person.birthdate).getFullYear();
+
+    let selectedPerson = $state(persons[0]);
 </script>
 
 <div class="ds-container bottom">
@@ -63,7 +65,11 @@
 
     <div class="person-container">
     {#each persons as person}
-        <Studentcard {person} />
+        <Studentcard
+            {person}
+            {selectedPerson}
+            onselect={() => (selectedPerson = person)}
+        />
     {/each}
     </div>
 </div>
@@ -189,4 +195,5 @@
         width:clamp(6.25rem, -7.0833rem + 66.6667vw, 10.625rem);
         height:auto;
     }
+    
 </style>

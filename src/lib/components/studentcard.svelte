@@ -1,39 +1,34 @@
 <script>
-	let { person } = $props();
+	let { person, selectedPerson, onselect } = $props();
 
 	const mugshot = person.mugshot
 		? `https://fdnd.directus.app/assets/${person.mugshot}`
 		: '/images/profile-dummy.jpeg';
+
 </script>
 
-<article class="student-card">
-	<img
-		class="person-mugshot"
-		src={mugshot}
-		alt={person.name}
-		width="200"
-		height="200"
-	>
-
-	<!-- <p class="person-name">{person.name}</p>
-
-	<a class="profile-link" href={person.profilecard}>Profilecard 
-		<img 
-			class="extern-link-icon" 	
-			src="/images/extern-link-arrow.svg" 
-			alt="Externe link" 
-			width="13px" 
-			height="13px"
+<a
+	href={`?student=${person.id}`}
+	onclick={onselect}
+	class:selected={selectedPerson.id === person.id}
+	style={`--selected-color: ${person.fav_color || 'black'}`}
+>
+	<article class="student-card">
+		<img
+			class="person-mugshot"
+			src={mugshot}
+			alt={person.name}
+			width="200"
+			height="200"
 		>
-	</a> -->
-</article>
+	</article>
+</a>
 
 
 <style>
 	.student-card{
 		background: rgb(238, 238, 238);
-		padding: .3rem 0rem;
-		width: 150px;
+		width: auto;
 		height: auto;
 		border-radius: 5px;
 		border: 1px solid rgb(207, 207, 207);
@@ -61,4 +56,8 @@
 		display: block;
 		margin: 0 auto;
 	}
+
+	.selected {
+        outline: 3px solid var(--selected-color);
+    }
 </style>
