@@ -27,6 +27,8 @@
         justify-content: center;
         height: 50vh;
         overflow-x: scroll;
+        scrollbar-color: darkred lightgray;
+        scrollbar-width: thin;
 
             @media (min-width:550px){
                 grid-template-columns: repeat(3, 1fr);
