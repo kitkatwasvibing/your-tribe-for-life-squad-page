@@ -24,7 +24,7 @@
         flex-wrap: wrap;
         gap:10px;
         justify-content: center;
-        height: 35em;
+        height: 50vh;
         overflow-y: scroll;
 
             @media (min-width:550px){
