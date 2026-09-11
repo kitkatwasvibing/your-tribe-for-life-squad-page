@@ -13,7 +13,8 @@
     const age = new Date().getFullYear() - new Date(person.birthdate).getFullYear();
 </script>
 
-<h1 class="h1"> Squad 2</h1>
+<div class="ds-container bottom">
+   <h1 class="h1"> Squad 2</h1>
 
 <article class="student-detail">
 	<img
@@ -60,12 +61,12 @@
 	</div>
 </article>
 
- <div class="person-container">
-{#each persons as person}
-	<Studentcard {person} />
-{/each}
+    <div class="person-container">
+    {#each persons as person}
+        <Studentcard {person} />
+    {/each}
+    </div>
 </div>
-
 
 <style>
 
@@ -152,11 +153,15 @@
         text-align:center;
     }
     .person-container{
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         gap:10px;
         justify-content: center;
-        padding: 0 .5rem;
+        height: 50vh;
+        overflow-x: scroll;
+        scrollbar-color: darkred lightgray;
+        scrollbar-width: thin;
 
             @media (min-width:550px){
                 grid-template-columns: repeat(3, 1fr);
@@ -170,7 +175,7 @@
             }
 
         @media (min-width:1024px){
-            grid-template-columns: repeat(6,1fr);
+            grid-template-columns: repeat(5,1fr);
             gap: 15px;
 
         }
