@@ -7,8 +7,13 @@ export async function load({ url }) {
     const selectedPerson =
         data.data.find((person) => String(person.id) === selectedId) ?? data.data[0];
  
+    const studentId = url.searchParams.get("student")
+    const selectedPerson = data.data.find(
+        person=> person.id == studentId
+    )
     return{
         persons: data.data,
-        selectedPerson
+        selectedPerson: selectedPerson
     }
+
 }
