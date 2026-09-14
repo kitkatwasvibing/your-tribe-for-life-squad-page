@@ -30,7 +30,7 @@
 		background: rgb(238, 238, 238);
 		width: auto;
 		height: auto;
-		border-radius: 5px;
+		border-radius: 10px;
 		border: 1px solid rgb(207, 207, 207);
 		transition: transform 0.2s ease, box-shadow 0.2s ease;
 	}
@@ -39,6 +39,7 @@
 		transform: scale(1.03);
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 		outline: 3px solid var(--selected-color);
+		border-radius: 10px;
 	}
 
 	.person-name{
@@ -56,9 +57,11 @@
 		height: 120px;
 		display: block;
 		margin: 0 auto;
+		border-radius: 10px;
 	}
 
 	.selected {
         outline: 3px solid var(--selected-color);
+		border-radius: 10px;
     }
 </style>
