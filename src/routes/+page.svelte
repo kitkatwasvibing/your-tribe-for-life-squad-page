@@ -4,6 +4,8 @@
 	let { data } = $props();
 	const persons = data.persons;
 
+    let selectedPerson = $derived(data.selectedPerson);
+
     const person = persons[0];
 
 	const mugshot = person.mugshot
@@ -12,7 +14,6 @@
 
     const age = new Date().getFullYear() - new Date(person.birthdate).getFullYear();
 
-    let selectedPerson = $state(persons[0]);
 </script>
 
 <div class="ds-container bottom">
@@ -68,7 +69,7 @@
         <Studentcard
             {person}
             {selectedPerson}
-            onselect={() => (selectedPerson = person)}
+            
         />
     {/each}
     </div>

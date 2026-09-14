@@ -1,6 +1,6 @@
 <script>
 	//Waarde meegeven 
-	let { person, selectedPerson, onselect } = $props();
+	let { person, selectedPerson} = $props();
 
 	const mugshot = person.mugshot
 		? `https://fdnd.directus.app/assets/${person.mugshot}`
@@ -10,7 +10,6 @@
 
 <a
 	href={`?student=${person.id}`}
-	onclick={onselect}
 	class:selected={selectedPerson.id === person.id}
 	style={`--selected-color: ${person.fav_color || 'black'}`}
 >
