@@ -1,11 +1,13 @@
 <script>
 	let { person } = $props();
 
+	// svelte-ignore state_referenced_locally
 	const mugshot = person.mugshot
 		? `https://fdnd.directus.app/assets/${person.mugshot}`
 		: '/images/profile-dummy.jpeg';
 </script>
 
+        <button type="submit" name="student" value={person.id}  class="person">
 <article class="student-card">
 	<img
 		class="person-mugshot"
@@ -27,7 +29,7 @@
 		>
 	</a> -->
 </article>
-
+		</button>
 
 <style>
 	.student-card{
@@ -44,7 +46,7 @@
 		transform: scale(1.03);
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 	}
-
+/* 
 	.person-name{
 		text-align: center;
 		font-size: 18px;
@@ -53,12 +55,16 @@
 	.profile-link{
 		display: block;
 		text-align: center;
-	}
+	} */
 
 	.person-mugshot{
 		width: 140px;
 		height: 120px;
 		display: block;
 		margin: 0 auto;
+	}
+	button.person{
+		all:unset; /*haalt de standaart browser styling van de knop weg */
+		cursor: pointer; /*dan komt er wel nog een handje te zien */
 	}
 </style>
