@@ -5,14 +5,16 @@
     // svelte-ignore state_referenced_locally
     const persons = data.persons;
 
+    let selectedPerson = $derived(data.selectedPerson);
+
     const person = persons[0];
 
     const mugshot = person.mugshot
         ? `https://fdnd.directus.app/assets/${person.mugshot}`
         : "/images/profile-dummy.jpeg";
 
-    const age =
-        new Date().getFullYear() - new Date(person.birthdate).getFullYear();
+    const age = new Date().getFullYear() - new Date(person.birthdate).getFullYear();
+
 </script>
 
 <div class="ds-container bottom">
@@ -202,4 +204,16 @@
             gap: 15px;
         }
     }
+    
+    .person{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .person-img{
+        width:clamp(6.25rem, -7.0833rem + 66.6667vw, 10.625rem);
+        height:auto;
+    }
+    
 </style>
