@@ -39,6 +39,7 @@
 	.student-card:hover {
 		transform: scale(1.03);
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		outline: 3px solid var(--selected-color);
 	}
 
 	.person-name{
