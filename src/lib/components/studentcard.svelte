@@ -1,4 +1,5 @@
 <script>
+	//Waarde meegeven 
 	let { person, selectedPerson, onselect } = $props();
 
 	const mugshot = person.mugshot
