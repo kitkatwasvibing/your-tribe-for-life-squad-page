@@ -11,7 +11,7 @@
 
 <a
 	href={`?student=${person.id}`}
-	class:selected={selectedPerson.id === person.id}
+	class:selected={selectedPerson?.id === person.id}
 	style={`--selected-color: ${person.fav_color || 'black'}`}
 >
 	<button type="submit" name="student" value={person.id}  class="person">
