@@ -10,6 +10,7 @@ body{
 .ds-container{
     border:5em darkred solid;
     background: lightgray;
+    filter: drop-shadow(10px 10px 4px black)
 }
 
 .ds-container.bottom{
