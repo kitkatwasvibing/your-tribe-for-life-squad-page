@@ -90,7 +90,12 @@
     <form method="GET">
         <div class="person-container">
             {#each persons as person}
+            <div class="wrapper-person">
                 <Studentcard {person} />
+                <div class="overlay">
+                    <span class="overlay-text">{person.name}</span>
+                </div>
+            </div>
             {/each}
         </div>
     </form>
@@ -204,16 +209,31 @@
             gap: 15px;
         }
     }
-    
-    .person{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
+    .wrapper-person{
+                position:relative;
 
-    .person-img{
-        width:clamp(6.25rem, -7.0833rem + 66.6667vw, 10.625rem);
-        height:auto;
     }
-    
+    .overlay{
+         position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+		height: 120px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  transition: 0.4s ease;
+  display: flex;              
+  justify-content: center;     
+  align-items: center; 
+  pointer-events: none;
+    }
+    .overlay-text{
+        color: white;
+   text-align: center;
+   font-size: 20px;
+    }
+    .wrapper-person:hover .overlay{
+    opacity: 1;
+}
 </style>
