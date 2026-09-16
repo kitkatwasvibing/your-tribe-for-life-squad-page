@@ -1,3 +1,6 @@
+*{
+    margin: 0;
+}
 .ds-container{
     border:5em darkred solid;
     background: lightgray;

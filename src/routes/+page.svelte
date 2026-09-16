@@ -16,93 +16,94 @@
     const age = new Date().getFullYear() - new Date(person.birthdate).getFullYear();
 
 </script>
+<div class="bigContainer">
+    <div class="ds-container top">
+        <h1 class="h1">Squad 2</h1>
 
-<div class="ds-container top">
-    <h1 class="h1">Squad 2</h1>
+        {#if data.selectedPerson}
+            <article class="student-detail">
+                {#if data.selectedPerson.mugshot}
+                    <img
+                        class="mugshot-detail"
+                        src={`https://fdnd.directus.app/assets/${data.selectedPerson.mugshot}`}
+                        alt={data.selectedPerson.name}
+                        width="200"
+                        height="200"
+                    />
+                {:else}
+                    <img
+                        class="mugshot-detail"
+                        src={"/images/profile-dummy.jpeg"}
+                        alt={data.selectedPerson.name}
+                        width="200"
+                        height="200"
+                    />
+                {/if}
+                
+                <div class="student-info">
+                    <header>
+                        <h2>{data.selectedPerson.name}</h2>
+                        <p>
+                            {new Date().getFullYear() -
+                                new Date(
+                                    data.selectedPerson.birthdate,
+                                ).getFullYear()} jaar
+                        </p>
 
-    {#if data.selectedPerson}
-        <article class="student-detail">
-            {#if data.selectedPerson.mugshot}
-                <img
-                    class="mugshot-detail"
-                    src={`https://fdnd.directus.app/assets/${data.selectedPerson.mugshot}`}
-                    alt={data.selectedPerson.name}
-                    width="200"
-                    height="200"
-                />
-            {:else}
-                <img
-                    class="mugshot-detail"
-                    src={"/images/profile-dummy.jpeg"}
-                    alt={data.selectedPerson.name}
-                    width="200"
-                    height="200"
-                />
-            {/if}
-            
-            <div class="student-info">
-                <header>
-                    <h2>{data.selectedPerson.name}</h2>
-                    <p>
-                        {new Date().getFullYear() -
-                            new Date(
-                                data.selectedPerson.birthdate,
-                            ).getFullYear()} jaar
-                    </p>
+                        <a
+                            href={`https://github.com/${data.selectedPerson.github_handle}`}
+                        >
+                            GitHub
+                        </a>
+                    </header>
 
-                    <a
-                        href={`https://github.com/${data.selectedPerson.github_handle}`}
-                    >
-                        GitHub
-                    </a>
-                </header>
+                    <dl>
+                        <div class="info-item">
+                            <dt>Nickname</dt>
+                            <dd>{data.selectedPerson.nickname}</dd>
+                        </div>
 
-                <dl>
-                    <div class="info-item">
-                        <dt>Nickname</dt>
-                        <dd>{data.selectedPerson.nickname}</dd>
-                    </div>
+                        <div class="info-item">
+                            <dt>Favoriet dier</dt>
+                            <dd>{data.selectedPerson.fav_animal}</dd>
+                        </div>
 
-                    <div class="info-item">
-                        <dt>Favoriet dier</dt>
-                        <dd>{data.selectedPerson.fav_animal}</dd>
-                    </div>
+                        <div class="info-item">
+                            <dt>Hobby</dt>
+                            <dd>{data.selectedPerson.fav_hobby}</dd>
+                        </div>
 
-                    <div class="info-item">
-                        <dt>Hobby</dt>
-                        <dd>{data.selectedPerson.fav_hobby}</dd>
-                    </div>
+                        <div class="info-item">
+                            <dt>Favoriete keuken</dt>
+                            <dd>{data.selectedPerson.fav_kitchen}</dd>
+                        </div>
+                    </dl>
 
-                    <div class="info-item">
-                        <dt>Favoriete keuken</dt>
-                        <dd>{data.selectedPerson.fav_kitchen}</dd>
-                    </div>
-                </dl>
-
-                <a href={data.selectedPerson.profilecard}>Profile card</a>
-            </div>
-        </article>
-    {:else}
-        <section class="start">
-            <p>Select character</p>
-        </section>
-    {/if}
-    </div>
-    <div class="ds-container bottom">
-    <form method="GET">
-        <div class="person-container">
-            {#each persons as person}
-                <Studentcard {person} />
-            {/each}
+                    <a href={data.selectedPerson.profilecard}>Profile card</a>
+                </div>
+            </article>
+        {:else}
+            <section class="start">
+                <p>Select character</p>
+            </section>
+        {/if}
         </div>
-    </form>
+        <div class="ds-container bottom">
+        <form method="GET">
+            <div class="person-container">
+                {#each persons as person}
+                    <Studentcard {person} />
+                {/each}
+            </div>
+        </form>
+    </div>
 </div>
 
 <style>
-    body{
-        width: 100%;
-        height: 100vh;
+    .bigContainer{
+        height: 100%;
     }
+
     .top{
         max-height: 50vh;
         overflow: scroll;
