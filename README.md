@@ -1,3 +1,15 @@
+# TODO:
+- Inhoudsopgave
+- Live link
+- Installatie instructies
+- Beschrijving van de site
+- Mockups van de site
+- Gebruik van de site
+- Bronnen
+- Designkeuzes
+- Kenmerken van de site (code)
+- Link naar code conventies
+- Link naar CONTRIBUTING.MD
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
