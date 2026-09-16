@@ -16,54 +16,54 @@ Ons doel was een website gebouwt hebben met sveltekit voor 18 september. Dit heb
 - Hoe heb je mij als teamlid ervaren
 luka: gezellig, oplettend, hard werkend
 kate: leuk en gezellig
-mete:
+mete: Ik vond de samenwerking fijn, je pakt dingen snel op
 - Welke tips heb je voor mij
 luka: laat comments achter in je code
 kate: je kan grote comments volgende keer beter een eigen issue maken
-mete:
+mete: je zou comments kunnen achterlaten voor duidelijkheid
 - Wat zou ik moeten veranderen om prettiger samen te werken
 luka: beter designs/ideeën verwoorden
 kate: op tijd komen
-mete:
+mete: aangeven met welke onderdeel je bezig bent 
 - Waar ben je trots op?
 luka: Houdt altijd een positieve mental state :)
 kate: je hebt hele leuke creatieve ideeen
-mete:
+mete: Leuke design ideeën, goede designer
 
 ## Luka
 - Hoe heb je mij als teamlid ervaren
 Angel: Denkt goed mee, helpt als ik vragen heb, communiceert als te laat komt.
 Kate: fijn om mee te werken, erg gezellig
-Mete:
+Mete: Leuk om mee te werken, denkt goed mee
 - Welke tips heb je voor mij
 Angel: Eerder beginnen met je werk, om hulp vragen waar nodig.
 Kate: Meer gebruik maken van de project board
-Mete:
+Mete: Je teamleden vaker op de hoogte houden met je werk
 - Wat zou ik moeten veranderen om prettiger samen te werken
 Angel: Aangeven als je ergens vastloopt.
 Kate: Meer tijdens de les doen
-Mete:
+Mete: Aangeven als je ergens tegen aan loopt, zodat wij je kunnen helpen
 - Waar ben je trots op?
 Angel: Dat je er altijd bent en actief bezig bent
 Kate: Dat je meedenkt met problemen
-Mete:
+Mete: Je pakt je taken goed op, oplossingsgericht 
 ## Kate
 - Hoe heb je mij als teamlid ervaren
 Angel: Actief, optijd, altijd aanwezig erg goeie creatieve design ideeen helpt altijd bij vragen en komt met oplossingen.
 Luka: Goede design-ideeën, aanwezigheid was top
-Mete:
+Mete: Fijn om mee te werken, goede aanwezigheid, komt vaak met oplossingen bij vragen.
 - Welke tips heb je voor mij
 Angel: Voordat je een issue als done zet kijken of het volledig af is, kijken wat je er verder aan kan doen en anders opschrijven waarom het eindresultaat uiteindelijk niet is zoals je wilde.
 Luka: Comments achterlaten in je code
-Mete:
+Mete: Je zou comments kunnen achterlaten in de code voor meer duidelijkheid 
 - Wat zou ik moeten veranderen om prettiger samen te werken
 Angel: Bij vastlopen van een taak aangeven zodat we het samen kunnen oplossen. 
 Luka: Proberen vaker tot het einde van de dag te blijven
-Mete:
+Mete: Ons op de hoogte houden zodra je ergens tegen aan loopt.
 - Waar ben je trots op?
 Angel: De leuke design ideeen en recommended websites die je geeft.
 Luka: Jouw DS-design
-Mete:
+Mete: Leuke DS-design waar mee je kwam als idee.
 ## Mete
 - Hoe heb je mij als teamlid ervaren
 Angel: Actief, komt met goeie ideeen en oplossingen
