@@ -93,7 +93,7 @@
             <div class="wrapper-person">
                 <Studentcard {person} />
                 <div class="overlay">
-                    <div class="overlay-text">{person.name}</div>
+                    <span class="overlay-text">{person.name}</span>
                 </div>
             </div>
             {/each}
@@ -231,7 +231,7 @@
     .overlay-text{
         color: white;
    text-align: center;
-   font-size: larger;
+   font-size: 20px;
     }
     .wrapper-person:hover .overlay{
     opacity: 1;
