@@ -99,6 +99,16 @@
 </div>
 
 <style>
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    .top{
+        max-height: 50vh;
+        overflow: scroll;
+        scrollbar-color: darkred lightgray;
+        scrollbar-width: thin;
+    }
     .student-detail {
         display: grid;
         grid-template-columns: 1fr;
@@ -185,7 +195,7 @@
         flex-direction: column;
         gap: 10px;
         justify-content: center;
-        height: 50vh;
+        max-height: 50vh;
         overflow-x: scroll;
         scrollbar-color: darkred lightgray;
         scrollbar-width: thin;
