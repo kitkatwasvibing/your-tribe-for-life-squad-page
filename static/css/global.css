@@ -2,11 +2,6 @@ body{
     height:100%;
 }
 
-.person{
-    border: 1px black solid;
-    border-radius: 5px;
-}
-
 .ds-container{
     border:5em darkred solid;
     background: lightgray;
