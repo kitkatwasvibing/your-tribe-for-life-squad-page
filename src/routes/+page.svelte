@@ -17,7 +17,7 @@
 
 </script>
 
-<div class="ds-container bottom">
+<div class="ds-container top">
     <h1 class="h1">Squad 2</h1>
 
     {#if data.selectedPerson}
@@ -87,6 +87,8 @@
             <p>Select character</p>
         </section>
     {/if}
+    </div>
+    <div class="ds-container bottom">
     <form method="GET">
         <div class="person-container">
             {#each persons as person}

@@ -10,6 +10,7 @@ body{
 .ds-container{
     border:5em darkred solid;
     background: lightgray;
+    
 }
 
 .ds-container.bottom{
