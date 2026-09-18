@@ -102,6 +102,16 @@
 </div>
 
 <style>
+
+:global(html),
+	:global(body) {
+                      cursor: url('/assets/plus-outline.svg'), auto;
+	}
+
+	:global(a),
+	:global(button) {
+                      cursor: url('/assets/plus-outline.svg'), auto;}
+                      
     .student-detail {
         display: grid;
         grid-template-columns: 1fr;

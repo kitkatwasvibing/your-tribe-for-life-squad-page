@@ -28,6 +28,15 @@
 </a>
 
 <style>
+
+:global(html),
+	:global(body) {
+                      cursor: url('/assets/plus-outline.svg'), auto;
+	}
+
+	:global(a),
+	:global(button) {
+                      cursor: url('/assets/plus-outline.svg'), auto;}
 	.student-card{
 		background: rgb(238, 238, 238);
 		width: auto;
@@ -68,6 +77,5 @@
     }
 	button.person{
 		all:unset; /*haalt de standaart browser styling van de knop weg */
-		cursor: pointer; /*dan komt er wel nog een handje te zien */
 	}
 </style>

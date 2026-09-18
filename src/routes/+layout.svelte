@@ -8,4 +8,15 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+
 {@render children()}
+<style>
+:global(html),
+	:global(body) {
+                      cursor: url('/assets/plus-outline.svg'), auto;
+	}
+
+	:global(a),
+	:global(button) {
+                      cursor: url('/assets/plus-outline.svg'), auto;
+	}</style>
